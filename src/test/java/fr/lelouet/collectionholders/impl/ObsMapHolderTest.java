@@ -3,6 +3,7 @@ package fr.lelouet.collectionholders.impl;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -42,7 +43,7 @@ public class ObsMapHolderTest {
 		source.put("a2", "c");
 		sourceimpl.dataReceived();
 		Assert.assertEquals(count[0], 4);
-
+		Stream.of('a', 'b', 'c').parallel().mapToInt(c -> Character.digit(c, 10)).min().orElseGet(() -> Integer.MAX_VALUE);
 	}
 
 }
