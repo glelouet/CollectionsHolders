@@ -42,11 +42,4 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
-
-	<scm>
-		<url>https://github.com/glelouet/CollectionsHolder</url>
-		<connection>scm:git:git@github.com:glelouet/CollectionsHolder</connection>
-		<developerConnection>scm:git:git@github.com:glelouet/CollectionsHolder</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
 </project>
